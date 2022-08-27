@@ -83,6 +83,9 @@ footer a{
 
 /* setting the responsiveness of the digital clock */
 @media (max-width: 480px){
+  body{
+    background-color: lightblue;
+  }
   
   .clock{
     flex-direction: column;

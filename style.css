@@ -1,6 +1,3 @@
-html{
-  background-image: url('./Assets/time.jpg');
-}
 
 body{
   margin: 0;
@@ -82,6 +79,13 @@ footer a{
 
 /* setting the responsiveness of the digital clock */
 @media (max-width: 768px){
+  html{
+  background-image: url('./Assets/time.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; 
+}
+  
   .clock{
     flex-direction: column;
   }

@@ -85,6 +85,7 @@ footer a{
 @media (max-width: 480px){
   body{
     background-color: lightblue;
+    backgeound-image: url('https://images.unsplash.com/photo-1549382244-bf08f7a1bf96?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80')
   }
   
   .clock{

@@ -18,6 +18,7 @@ h2{
     font-size: 20px;
     letter-spacing: 4px;
     text-align: center;
+    color: white;
 }
 
 .clock{
@@ -26,13 +27,13 @@ h2{
 
 .clock div{
   margin: 5px;
+  position: relative;
 }
 
 .clock span{
   width: 100px;
   height: 80px;
-  background-color: slateblue;
-  opacity: .8;
+  background-color: rgba(155, 155, 158, 0.485);
   color: white;
   display: flex;
   justify-content: center;
@@ -46,6 +47,55 @@ h2{
   font-size: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  background-color: red;
+  background-color: goldenrod;
+  font-weight: 800;
+  color: black;
   opacity: 0.8;
+}
+
+.clock #ampm{
+  bottom: 0;
+  width: 60px;
+  height: 30px;
+  font-size: 20px;
+  position: absolute;
+}
+
+footer a{
+  font-weight: 700;
+  color: goldenrod;
+  position: relative;
+  top: 200%;
+  text-shadow: 5px 1px 3px rgba(0,0,0,0.9);
+  text-decoration: none;
+}
+
+
+/* setting the responsiveness of the digital clock */
+@media (max-width: 480px){
+  .clock{
+    flex-direction: column;
+  }
+
+  .clock #ampm{
+    position: static;
+    width: 100%;
+  }
+
+  .clock span{
+    width: 150px;
+    height: 100px;
+  }
+
+  .clock .text{
+    height: 50px;
+    font-size: 12px;
+  }
+
+  footer a{
+    font-weight: 700;
+    color: white;
+    position: relative;
+    top: 20px;
+  }
 }
